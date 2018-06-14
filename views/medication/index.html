@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>WE6.0 WPD A3 Owen Taaffe</title>
+	
+	<!-- main bootstrap css -->
+	<link rel="stylesheet" href="../../content/css/bootstrap.css">
+	<!-- app css-->
+	<link rel="stylesheet" href="../../content/css/myStyle.css">
+	
+	<!-- link for font awesome js-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body id="profile_body">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="#"> <img id="Elder_logo" src="../../images/elder_tree.jpg" alt="Elder Tree"> Elder</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="../../index.html"><h3>Home</h3></a>
+		  </li>
+		  <li class="nav-item  active">
+			<a class="nav-link" href="index.html"><h3>Profile</h3> <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../chat/index.html"><h3>Chat</h3></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../memory/index.html"><h3>Memory Box</h3></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../games/index.html"><h3>Games</h3></a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<div class="main">
+	  <div class="container-fluid">
+	  	<!-- user profile image & personnel details -->
+	  	<div class="row" id="profilediv">
+			<!-- medication table -->
+			<div class="col-12 col-sm-6 col-md-12 col-lg-6" id="medicationdiv">
+				<h4 align="right"><a href="edit_medication.html" id="contactEditBtn">Edit</a></h4>
+				<table class="table">
+					<thead id="medication-info">
+						<tr>
+							<th>Time</th>
+							<th>Medication</th>
+							<th>Dose</th>
+							<th></th>
+						</tr>
+					</thead>
+					<!-- 
+					  table tr dt would be replaced by data from a database 
+					  this would be in the form of a foreach loop
+					-->
+					<tbody id="medication-info">
+					  <tr>
+						<td>08:00</td>
+						<td>***********</td>
+						<td>1</td>
+					  </tr>
+					  <tr>
+						<td>08:00</td>
+						<td>***********</td>
+						<td>2</td>
+					  </tr>
+					  <tr>
+						<td>13:00</td>
+						<td>***********</td>
+						<td>2</td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	  </div>
+	  <div class="col-12" id="profileButtonsDetails">
+	    <button type="button" class="btn btn-primary btn-lg" id="doctorbutton" onclick="document.getElementById('doctorDetails').style.display='block'" style="width:auto;"><h4><strong>Doctor</strong></h4></button>
+	    <button type="button" class="btn btn-primary btn-lg" id="doctorbutton" onclick="document.getElementById('familyDetails').style.display='block'" style="width:auto;"><h4><strong>Family</strong></h4></button>
+	    <button type="button" class="btn btn-primary btn-lg" id="doctorbutton" onclick="document.getElementById('carerDetails').style.display='block'" style="width:auto;"><h4><strong>Carer</strong></h4></button>
+        <!-- code reuse -->
+		<!-- REF: https://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects -->
+		<!-- alarm modal-->
+	    <div id="doctorDetails" class="modal">
+		  <form class="modal-content animate" action="#">
+			<div class="imgcontainer">
+			  <span onclick="document.getElementById('doctorDetails').style.display='none'" class="close" title="Close Modal">&times;</span>
+			  <img src="../../images/elder_tree.jpg" alt="logo" class="profilelogo">
+			</div>
+
+			<div class="container">
+	          <div class="row">
+		        <div class="col-xs-12 col-sm-6 col-md-6">
+				  <div class="row">
+					<div class="col-4 text-right">
+					   <label for="email"><p><strong>Name: </strong></p></label>
+					 </div>
+					 <div class="col-8">
+					   <p><strong>Doctor name here</strong></p>
+					 </div>
+					 
+					<div class="col-4 text-right">
+					  <label for="password"><p><strong>Address </strong></p></label>
+					</div>
+					<div class="col-8">
+					  <p><strong>address line 1</strong></p>
+					  <p><strong>address line 2</strong></p>
+					  <p><strong>address line 3</strong></p>
+					</div>
+					
+					<div class="col-4 text-right">
+					  <label for="phone"><p><strong>Phone: </strong></p></label>
+					</div>
+					<div class="col-8">
+					  <p><strong>Phone number here</strong></p>
+					</div>
+				  </div>
+				</div> 
+				<div class="col-xs-12 col-sm-6 col-md-6">
+				  <div class="form-group">
+				    <label for="message-text" class="col-form-label"><strong>Message:</strong></label>
+				    <textarea class="form-control" id="message-text" rows="5" required></textarea>
+				  </div>
+				  
+				  <button class="btn btn-success btn-lg" type="submit"  onclick="document.getElementById('doctorDetails').style.display='none'" class="btn btn-danger cancelbtn"><strong>Send Message</strong></button>
+			     <button type="button" onclick="document.getElementById('doctorDetails').style.display='none'" class="btn btn-danger cancelbtn"><strong>Cancel</strong></button><br>
+				</div>
+			  </div>
+		    </div>
+		  </form>
+		</div>
+	    <!-- code reuse -->
+		<!-- REF: https://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects -->
+		<!-- alarm modal--> 
+	    <div id="familyDetails" class="modal">
+	     <form class="modal-content animate" action="#">
+		   <div class="imgcontainer">
+		     <span onclick="document.getElementById('familyDetails').style.display='none'" class="close" title="Close Modal">&times;</span>
+		     <img src="../../images/elder_tree.jpg" alt="logo" class="profilelogo">
+		   </div>
+
+		   <div class="container">
+		     <div class="row">
+			   <div class="col-xs-12 col-sm-6 col-md-6">
+			     <div class="row">
+				   <div class="col-4 text-right">
+				      <label for="email"><p><strong>Name: </strong></p></label>
+				    </div>
+				    <div class="col-8">
+				      <p><strong>Family name here</strong></p>
+				    </div>
+
+				   <div class="col-4 text-right">
+				     <label for="password"><p><strong>Address </strong></p></label>
+				   </div>
+				   <div class="col-8">
+				     <p><strong>address line 1</strong></p>
+				     <p><strong>address line 2</strong></p>
+				     <p><strong>address line 3</strong></p>
+				   </div>
+
+				   <div class="col-4 text-right">
+				     <label for="phone"><p><strong>Phone: </strong></p></label>
+				   </div>
+				   <div class="col-8">
+				     <p><strong>Phone number here</strong></p>
+				   </div>
+			     </div>
+			   </div> 
+			   <div class="col-xs-12 col-sm-6 col-md-6">
+			     <div class="form-group">
+				   <label for="message-text" class="col-form-label"><strong>Message:</strong></label>
+				   <textarea class="form-control" id="message-text" rows="5"></textarea>
+			     </div>
+
+			     <button class="btn btn-success btn-lg" type="submit" onclick="document.getElementById('familyDetails').style.display='none'" class="btn btn-danger cancelbtn"><strong>Send Message</strong></button>
+			     <button type="button" onclick="document.getElementById('familyDetails').style.display='none'" class="btn btn-danger cancelbtn"><strong>Cancel</strong></button><br>
+			   </div>
+		     </div>
+		   </div>
+	     </form>
+	   </div>
+       <!-- code reuse -->
+	   <!-- REF: https://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects -->
+	   <!-- alarm modal-->
+       <div id="carerDetails" class="modal">
+	     <form class="modal-content animate" action="#">
+		   <div class="imgcontainer">
+		     <span onclick="document.getElementById('carerDetails').style.display='none'" class="close" title="Close Modal">&times;</span>
+		     <img src="../../images/elder_tree.jpg" alt="logo" class="profilelogo">
+		   </div>
+
+		   <div class="container">
+		     <div class="row">
+			   <div class="col-xs-12 col-sm-6 col-md-6">
+			     <div class="row">
+				   <div class="col-4 text-right">
+				      <label for="email"><p><strong>Name: </strong></p></label>
+				    </div>
+				    <div class="col-8">
+				      <p><strong>Carer name here</strong></p>
+				    </div>
+
+				   <div class="col-4 text-right">
+				     <label for="password"><p><strong>Address </strong></p></label>
+				   </div>
+				   <div class="col-8">
+				     <p><strong>address line 1</strong></p>
+				     <p><strong>address line 2</strong></p>
+				     <p><strong>address line 3</strong></p>
+				   </div>
+
+				   <div class="col-4 text-right">
+				     <label for="phone"><p><strong>Phone: </strong></p></label>
+				   </div>
+				   <div class="col-8">
+				     <p><strong>Phone number here</strong></p>
+				   </div>
+			     </div>
+			   </div> 
+			   <div class="col-xs-12 col-sm-6 col-md-6">
+			     <div class="form-group">
+				   <label for="message-text" class="col-form-label"><strong>Message:</strong></label>
+				   <textarea class="form-control" id="message-text" rows="5"></textarea>
+			     </div>
+
+			     <button class="btn btn-success btn-lg" type="submit" onclick="document.getElementById('carerDetails').style.display='none'" class="btn btn-danger cancelbtn"><strong>Send Message</strong></button>
+			     <button type="button" onclick="document.getElementById('carerDetails').style.display='none'" class="btn btn-danger cancelbtn"><strong>Cancel</strong></button><br>
+			   </div>
+		     </div>
+		   </div>
+	     </form>
+	   </div>
+	     
+	  </div>
+	  
+	  <div class="footer">
+		<div class="col-xs-12 home_button_div">
+		  <a class="btn" href="../../index.html" id="homeButton">
+            <h1><strong><i class="fa fa-home"></i> Home</strong></h1>
+		  </a>
+		</div>
+	  </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<script src="../../content/js/bootstrap.js"></script>
+	
+	<script src="../../content/js/myJavascript.js"></script>
+	
+  <script>
+	function myFunction() {
+	  alert("This function is not fully operational at the moment");
+    }
+  </script>
+</body>
+</html>

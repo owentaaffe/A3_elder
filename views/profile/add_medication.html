@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>WE6.0 WPD A3 Owen Taaffe</title>
+	
+	<!-- main bootstrap css -->
+	<link rel="stylesheet" href="../../content/css/bootstrap.css">
+	<!-- app css-->
+	<link rel="stylesheet" href="../../content/css/myStyle.css">
+	
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body id="add_medication_page">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="#"> <img id="Elder_logo" src="../../images/elder_tree.jpg" alt="Elder Tree"> Elder</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="../../index.html"><h3>Home</h3></a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="../profile/index.html"><h3>Profile</h3> <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../chat/index.html"><h3>Chat</h3></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../memory/index.html"><h3>Memory Box</h3></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html"><h3>Games</h3></a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<div class="main" id="add_medi_details">
+	    <div class="container-fluid">
+	    <div>
+	      <h3 class="text-center">Add Medication</h3>
+	    </div> 
+	    <form>
+			<div class="form-group row" id="add_medication">
+			  <label for="name" class="col-4 col-form-label text-right"><strong>Time:</strong></label>
+			  <div class="col-6">
+				<select class="custom-select" >
+						<option selected><strong>08:00</strong></option>
+						<option value="1"><strong>01:00</strong></option>
+						<option value="2"><strong>02:00</strong></option>
+						<option value="3"><strong>03:00</strong></option>
+						<option value="4"><strong>04:00</strong></option>
+						<option value="5"><strong>05:00</strong></option>
+						<option value="6"><strong>06:00</strong></option>
+						<option value="7"><strong>07:00</strong></option>
+						<option value="8"><strong>08:00</strong></option>
+						<option value="9"><strong>09:00</strong></option>
+						<option value="10"><strong>10:00</strong></option>
+						<option value="11"><strong>11:00</strong></option>
+						<option value="12"><strong>12:00</strong></option>
+						<option value="13"><strong>13:00</strong></option>
+						<option value="14"><strong>14:00</strong></option>
+						<option value="15"><strong>15:00</strong></option>
+						<option value="16"><strong>16:00</strong></option>
+						<option value="17"><strong>17:00</strong></option>
+						<option value="18"><strong>18:00</strong></option>
+						<option value="19"><strong>19:00</strong></option>
+						<option value="20"><strong>20:00</strong></option>
+						<option value="21"><strong>21:00</strong></option>
+						<option value="22"><strong>22:00</strong></option>
+						<option value="23"><strong>23:00</strong></option>
+						<option value="24"><strong>24:00</strong></option>
+					  </select>	
+			  </div>
+			</div>
+			<div class="form-group row" id="add_medication">
+			  <label for="medication" class="col-4 col-form-label text-right"><strong>Medication: </strong></label>
+			  <div class="col-6">
+				<input type="text" placeholder="Medication Name">
+			  </div>
+			</div>
+			<div class="form-group row">
+			  <label for="idose" class="col-4 col-form-label text-right"><strong>Dose: </strong></label>
+			  <div class="col-6">
+				<select class="custom-select" id="add_medication">
+				  <option selected><strong>2</strong></option>
+				  <option value="1"><strong>1</strong></option>
+				  <option value="2"><strong>2</strong></option>
+				  <option value="3"><strong>3</strong></option>
+				  <option value="4"><strong>4</strong></option>
+			    </select>
+			  </div>
+			</div>
+			<div class="form-group row" id="add_medication">
+			  <div class="offset-sm-2 col-sm-10">
+				<a type="submit" href="index.html" onclick="myFunction()" class="btn btn-primary"><strong>Submit</strong></a>
+			    <a class="btn btn-danger" href="index.html"><strong>Cancel</strong></a>
+			  </div>
+			</div>
+		  </form>
+		</div>
+	
+		<div class="footer">
+			<div class="col-xs-12 home_button_div">
+				<a class="btn" href="../../index.html" id="homeButton">
+					<h1><strong><i class="fa fa-home"></i> Home</strong></h1>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<script src="../../content/js/myJavascript.js"></script>
+</body>
+</html>

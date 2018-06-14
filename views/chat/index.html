@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>WE6.0 WPD A3 Owen Taaffe</title>
+	
+	<!-- main bootstrap css -->
+	<link rel="stylesheet" href="../../content/css/bootstrap.css">
+	<!-- app css-->
+	<link rel="stylesheet" href="../../content/css/myStyle.css">
+	
+	<!-- link forfont awesome js-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body id="body-chat">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="chat-navbar">
+	  <a class="navbar-brand" href="#"> <img id="Elder_logo" src="../../images/elder_tree.jpg" alt="Elder Tree"><span id="logo_text"><h3>Elder</h3></span> </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="../../index.html"><h3>Home</h3></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../profile/index.html"><h3>Profile</h3></a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html"><h3>Chat</h3> <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../memory/index.html"><h3>Memory Box</h3></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../games/index.html"><h3>Games</h3></a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<div class="main">
+      <!-- add contact div -->
+	  <div align="right" id="add_contact">
+		<h3><strong><a href="add_contact.html">Add <i class="fa fa-plus"> </i> </a></strong></h3>
+	  </div><!-- end add contact div -->
+	  <!-- chat button container div -->
+	  <div class="container-button-chat">
+		<div class="container colapsibleContainer" id="colapsibleContainer">
+		  <!-- accordion div -->
+		  <div id="accordion">
+	        <!-- 
+	        These cards are hard coded to show what is would look like during development
+	        This would be replaced in a loop to take contact details data from a database
+	        -->
+		    <!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-1">
+			    <h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+				    <h4 id="contact_button">
+		              <!-- contact 1 can be coded to take name of contact from a database-->
+					  <strong>Contact 1</strong>
+					  <a id="contactEditBtn" onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+			    </h5>
+			  </div>
+			  
+			  <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+			    <div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div>
+			</div><!-- end card div -->
+			<!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-2">
+			    <h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+				    <h4 id="contact_button">
+		              <!-- contact 2 can be coded to take name of contact from a database-->
+					  <strong>Contact 2</strong>
+					  <a id="contactEditBtn" onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+				</h5>
+			  </div>
+			  <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+			    <div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div><!-- end colapse div -->
+			</div><!-- end card div -->
+
+			<!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-3">
+				<h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+					<h4 id="contact_button">
+		              <!-- contact 3 can be coded to take name of contact from a database-->
+				      <strong>Contact 3</strong>
+					  <a id="contactEditBtn"  onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+				</h5>
+			  </div>
+			  <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
+				<div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div><!-- end colapse div -->
+			</div><!-- end card div -->
+
+		    <!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-4">
+				<h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+					<h4 id="contact_button">
+		              <!-- contact 4 can be coded to take name of contact from a database-->
+					  <strong>Contact 4</strong>
+					  <a id="contactEditBtn"  onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+				</h5>
+			  </div>
+			  <div id="collapse-4" class="collapse" data-parent="#accordion" aria-labelledby="heading-4">
+				<div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div>
+			</div><!-- end card div -->
+
+			<!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-5">
+				<h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+					<h4 id="contact_button">
+		              <!-- contact 5 can be coded to take name of contact from a database-->
+					  <strong>Contact 5</strong>
+					  <a id="contactEditBtn" onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+				</h5>
+			  </div>
+			  <div id="collapse-5" class="collapse" data-parent="#accordion" aria-labelledby="heading-5">
+				<div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div>
+			</div><!-- end card div -->
+
+			<!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-6">
+				<h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+					<h4 id="contact_button">
+		              <!-- contact 6 can be coded to take name of contact from a database-->
+					  <strong>Contact 6</strong>
+					  <a id="contactEditBtn" onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+				</h5>
+			  </div>
+			  <div id="collapse-6" class="collapse" data-parent="#accordion" aria-labelledby="heading-6">
+				<div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div>
+			</div><!-- end card div -->
+
+			<!-- card div -->
+			<div class="card">
+			  <div class="card-header" id="heading-7">
+				<h5 class="mb-0" id="contact_button">
+				  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+					<h4 id="contact_button">
+		              <!-- contact 7 can be coded to take name of contact from a database-->
+					  <strong>Contact 7</strong>
+					  <a id="contactEditBtn" onclick="myFunction()" href="index.html"><i class="fa fa-trash"></i></a>
+					  <a id="contactEditBtn" href="edit_contact.html">Edit</a>
+					</h4>
+				  </a>
+				</h5>
+			  </div>
+			  <div id="collapse-7" class="collapse" data-parent="#accordion" aria-labelledby="heading-7">
+				<div class="card-body">
+				  <ul>
+				    <li>
+					  <a id="text_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-comments fa-3x"></i>
+						  <h1> Text</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="phone_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+						<strong><i class="fa fa-phone fa-3x"></i>
+					      <h1> Phone</h1>
+						</strong>
+					  </a>
+					</li>
+					<li>
+					  <a id="video_button" class="btn btn-md" onclick="myFunction()" href="index.html">
+					    <strong><i class="fa fa-video fa-3x"></i> 
+					      <h1>Video</h1>
+						</strong>
+				      </a>
+					</li>
+				  </ul>
+				</div><!-- end card-body div -->
+			  </div>
+			</div><!-- end card div -->
+
+		    <!-- card div -->
+		    <div class="card">
+		    </div><br><br><br><br><br><br><br><br>
+
+		  </div><!-- end accordion div -->
+	    </div><!-- end container div -->
+	  </div><!-- end chat button container div -->
+			
+      <div class="footer">
+	    <div class="col-xs-12 home_button_div">
+		  <a class="btn" href="../../index.html" id="homeButton">
+		    <h1><strong><i class="fa fa-home"></i> Home</strong></h1>
+		  </a>
+	    </div>
+	  </div><!-- end footer div -->
+	
+  </div><!-- end main div -->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <script src="../../content/js/myJavascript.js"></script>
+  <script>
+	function myFunction() {
+	  alert("This function is not fully operational at the moment");
+    }
+  </script>
+</body>
+</html>

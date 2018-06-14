@@ -1,0 +1,1187 @@
+body {
+  overflow: scroll;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+	
+#navbarprofileimg {
+	width: 12%;
+	border-radius: 50%;
+	margin-left: -8em;
+}
+
+#sidebar {
+  border-left: .1em solid grey;
+  float: right;
+  margin: -18em -1em 0 0;
+  padding: 0;
+  visibility: visible;
+}
+	
+#alarmSend {
+  margin-top: -1em;
+  height: 8em;
+  width: 100%;
+}
+	
+#alarmDismiss {
+  margin-top: -1em;
+  height: 8em;
+  width: 100%;
+}
+
+#games_index {
+  overflow: scroll;
+}
+
+#edit_contact_body {
+  overflow: scroll;
+  min-height: 30em;
+}
+
+#add_contact_body {
+  overflow: scroll;
+  min-height: 30em;	
+}
+	
+#edit_medication_page {
+  overflow: scroll;
+  height: 30em;
+}
+
+#add_medication_page {
+  overflow: scroll;
+  height: 25em;
+}
+
+#add_contact {
+  margin-right: 1.5em
+}
+
+#add_page {
+  overflow: scroll;
+  height: 25em;
+}
+
+#add_medication_page {
+  overflow: scroll;
+  min-height: 20em;
+}
+
+#alarmDismiss {
+  background-color: green;
+}
+
+
+/* start modal css*/
+/* reuse */
+/* Ref: https://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects */
+/* Full-width input fields */
+input[type=text], 
+input[type=password],
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.profilelogo {
+	width: 30%}
+
+img.alarmlogo {
+  width: 20%;
+}
+
+img.avatar {
+  width: 10%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* end modal css*/
+
+/* mobile phone portrait */
+@media only screen and (min-width: 296px) {
+  .navbar {
+	height: auto;
+	width: 100%;
+	padding: .2em;
+	line-height: 1.5em;
+  }
+
+  .card-body ul {
+	list-style-type: none;
+	margin-left: -4.5em;
+	display: inline-flex;
+  }
+	
+  #navbarSupportedContent a {
+	padding-left: 2em;	
+  }
+	
+  .navbar-toggler-icon {
+	height: 1.7em;
+	width: 1.7em;
+  }
+	
+  #logo_text {	
+	font-weight: bolder;
+    display: inline-block;
+  }
+
+  #logo_text h3 {
+	font-size: 2.7em;
+	font-weight: bolder;
+  }
+	
+  .footer h1 {
+	font-size: 6em;	
+	padding: 0 0 1em 0;
+  }
+	
+  .navbar-brand {
+	padding: 0 0 0 .5em; 
+  }
+	
+  #Elder_logo {
+	height: 2em;
+	border-radius: 100%;
+	padding: .1em;
+  }	
+	
+  #profileButton {
+    background-color: #3498DB;
+	height: 15em;
+	width: 120%;
+	padding: 4em 0 0 0;
+	margin: 0 0 0 -1em;
+	border-radius: 0  0 50% 50%;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
+  }
+	
+  #chatButton {
+    background-color: #2ECC71;
+	height: 15em;
+	width: 120%;
+	padding: 4em 0 0 0;
+	margin: 0 0 0 -1em;
+	border-radius: 0  0 50% 50%;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
+  }
+  
+  #alarmButton {
+	background-color: #ff0000;
+	height: 10em;
+	width: 107%;
+	padding: 3em 7.5em;
+	margin: -.5em 0 0 -.7em;
+	border-radius: 50% 50% 50% 50%;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	
+  }
+  
+  #memoryButton {
+	background-color: #95A5A6;
+	height: 15em;
+	width: 120%;
+	padding: 4em 0 0 0;
+	margin: -.5em 0 0 -1em;
+	border-radius: 50% 50% 0  0;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	
+  }
+	
+  #gamesButton {
+	background-color: #F9E79F;
+	height: 15em;
+	width: 120%;
+	padding: 4em 0 0 0;
+	margin: -.5em 0 0 -1em;
+	border-radius: 50% 50% 0  0;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);		
+  }
+	
+  #profileButton
+  #chatButton
+  #alarmButton
+  #memoryButton
+  #gamesButton, h1, h2 {
+	color: #000;
+	font-size: 2.5em;
+  }
+	
+  #memoryButton h2 {
+	font-size: 1.8em;
+  }
+	
+  #memoryButton h1 {
+	padding-left: .5em;
+  }
+	
+  #elder_logo_left {
+	display: none;
+  }
+	
+  #elder_logo_right {
+	display: none;
+  }
+  
+  #sidebar {
+	visibility: hidden;	
+  }
+	
+  #homeButton {
+	height: 6em;
+	width: 100%;
+	padding: 1em 0 0 0;
+	margin:  0 0 0 0;
+	background-color: green;
+	color: #000;
+  }
+	
+  #homeButton h1 {
+	font-size: 3em;
+  }
+	
+  /* chat index page */
+
+  #chat-navbar a {
+	font-size: .6em;
+  }	
+
+  #chat-navbar img {
+	padding: .5em;
+	height: 5em;
+	margin-left: .5em;
+  }	
+	
+  .card-header {
+	height: 2em;
+	background-color: #42e2f4;
+	padding: .3em 1em;
+	font-size: 4em;
+	font-weight: bolder;
+	color: #000;
+  }
+	
+  #body-chat {
+	overflow: visible;
+	height: 130%;
+  }
+	
+  #chat_buttons li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+	
+  .card-body {
+	overflow: scroll;
+  }
+
+  .card-header {
+	height: 1em;
+	padding: inherit;
+	text-align: center;
+  }
+	
+  #contact_button, a {
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+	color: #000;
+	text-decoration: none;
+	font-size: .8em;
+  }
+	
+  #text_button {
+	background-color: red;
+	padding: 0 1.5em;
+  }
+	
+  #text_button h1 {
+	font-size: 1.8em;
+	margin-top: -.1em;
+  }
+	
+  #phone_button {
+	background-color: blue;
+	padding: 0 1.2em;
+  }
+	
+  #phone_button h1 {
+	font-size: 1.8em;
+	margin-top: -.1em;
+  }
+	
+  #video_button {
+	background-color: green;
+	padding: 0 1.2em;
+  }
+	
+  #video_button h1 {
+	font-size: 1.8em;
+	margin-top: -.1em;
+  }
+	
+  #contactEditBtn {
+	color: blue;
+	float: right;
+	padding-right: .2em;
+    margin-top: .2em;
+  }
+	
+  /* Chat Edit Page*/
+  .chat_top_div {
+	margin-top: -1.5em;
+  }
+	
+  #edit_form label {
+	font-size: 1em;
+	font-weight: bold;
+  }
+	
+  #elder_logo_left_1 {
+	margin-left: 1.3em;
+	height: 2em;
+  }
+	
+  #elder_logo_right_1{
+	height: 2em;
+  }
+	
+  /* profile index page*/
+  #profile_pic {
+	border-radius: 100%;
+	height: 5em;
+	margin: 2.5em 0 0 .1em;
+	padding-bottom: .5em;
+  }
+	
+  #profile_body {
+	overflow: scroll;
+	height: 20em;
+  }
+	
+  #profile_logo img{
+	display: none;
+  }
+	
+  #profile_logo img{
+	height: 11em;
+	margin-left: -3.6em;
+  }
+	
+  #medication-info td {
+	padding: 0;
+	text-align: center;
+  }
+	
+  #medication-info th {
+	padding: 0;
+	text-align: center;
+  }
+	
+  #medicationdiv {
+	border-top: .1em solid grey;
+	padding-top: .5em;
+  }
+	
+  #profileButtonsDetails {
+	border-top:  .1em solid grey; 
+	padding-top: .5em;
+  }
+	
+  /* edit profile page*/
+  #edit_profile_pic {
+	border-radius: 100%;
+	margin-left: 3em;
+	height: 10em;
+  }
+	
+  #profileImgHref {
+	color: blue;
+	margin-left: 3em;
+	font-size: .8em;
+  }
+	
+  #profile_name_label {
+	 margin: -.5em 0 0 0;
+  }
+	
+  #profile_number_label {
+    margin-top: -1.3em;
+	  
+  } 
+	
+  #profile_email_label {
+	margin-top: -1.3em;	
+  }
+	
+  /* edit medication table page*/
+  .midi_table {
+	overflow: scroll;
+  }
+	
+  #mediTimeOption {
+	width: 160%;
+	padding: 0 .5em 0 .2em;
+	font-weight: bolder;
+  }
+	
+  #medicInput {
+	width: 70%;	
+	margin-left: 1.5em;
+	margin-top: .3em;
+	font-weight: bolder;
+  }
+	
+  #mediDoseOption {
+	width: 150%;
+	margin-left: -1.5em;
+	font-weight: bolder;
+  }
+	
+  #add_medi {
+    margin-top: 0;
+  }
+	
+  /* add medication page */
+  #add_medication {
+	  margin-top: .5em;
+  }
+	
+  #add_medi_details {
+	overflow: scroll;
+  }
+	
+	
+
+  #games_index {
+    overflow: scroll;
+	height: 28em;
+  }
+}
+/* end phone portrait */
+/* ------------------------------------------- */
+/* mobile phone landscape */
+@media only screen and (min-width: 496px) and (max-width: 675px) {
+  .navbar {
+	font-weight: bolder;
+  }
+	
+  #navbarSupportedContent h3 {
+	font-size: 1.5em;
+  }	
+	
+  #navbarprofileimg {
+	width: 9%;
+	border-radius: 50%;
+	margin-left: -24em;
+  }
+	
+  #profileButton,
+  #chatButton {
+	height: 7em;
+	width: 110%;
+	padding: 0 0 0 0;
+  }
+  
+  #alarmButton {
+	height: 6.5em;
+	padding: 1.5em 4.5em;
+	margin: -.8em -10em 0 8em;	
+  }
+  
+  #memoryButton,
+  #gamesButton {
+	height: 7.5em;
+	width: 110%;
+	padding: 0 0 0 0;
+	margin: -1em 0 0 -1em;
+  }
+	
+  #memoryButton h2 {
+	font-size: 2.3em;
+  }
+	
+  #elder_logo_left {
+	display: inline-block;
+	height: 6em;	
+	margin: -.1em -7.4em 0 -.5em;
+  }
+	
+  #elder_logo_right{
+	display: inline-block;
+	height: 6em;	
+	margin: -.1em 0 0 11em;
+  }
+  
+  #sidebar {
+	visibility: hidden;	
+  }
+	
+  #homeButton {
+	height: 4em;
+	padding: .1em 0 0 0;
+  }
+	
+  /* chat page */
+  .card-header {
+	height: 1.5em;
+	font-size: 3em;
+  }
+	
+  #contact_button, a {
+	font-size: 1em;
+  }
+	
+  #text_button {
+	font-size: 1.5em;
+  }
+	
+  #text_button h1 {
+	margin-top: -.2em;
+  }
+	
+  #phone_button {
+	font-size: 1.5em;
+  }
+	
+  #phone_button h1 {
+	margin-top: -.2em;
+  }
+	
+  #video_button {
+	font-size: 1.5em;
+  }
+	
+  #video_button h1 {
+	margin-top: -.2em;
+  }
+	
+  #contactEditBtn {
+	margin-top: -.1em;
+  }
+	
+  /* Chat Edit Page*/
+  .chat_top_div {
+	margin-top: -1.5em;
+  }
+	
+  #profile_info_div {
+    border-right: .1em solid grey;
+  }
+	
+  #elder_logo_left_1 {
+	margin-left: 5.3em;
+	height: 2em;
+  }
+	
+  #elder_logo_right_1{
+	height: 2em;
+  }
+	
+  #edit_form {
+	margin-top: -1.5em;	
+  }
+	
+  /* profile index page */
+  #medicationdiv {
+	border-top: none;
+	padding-top: .5em;
+	margin-top: -.5em;
+  }
+	
+  /* edit profile page*/
+  #edit_profile_pic {
+	margin: 1em 0 0 0;
+	height: 10em;
+  }
+	
+  #profileImgHref {
+	margin: -4em 0 0 0;
+	font-size: .7em;
+  }
+  
+  #profile_name_label,
+  #profile_name {
+	 margin: .5em 0 0 0;
+  }
+	
+  #profile_number_label,
+  #profile_number {
+    margin-top: -.6em;
+	  
+  } 
+	
+  #profile_email_label,
+  #profile_email {
+	margin-top: -.6em;	
+  }
+	
+  .btn-block{
+    width: 79%;
+	height: 2.5em;
+  }
+	
+  /* edit medication table page*/
+  #mediTimeOption {
+	width: 75%;
+  }
+	
+  #medicInput {
+	width: 90%;	
+	margin-left: -1em;
+  }
+	
+  #mediDoseOption {
+	width: 90%;
+  }
+	
+  /* edit medication table page*/
+  #add_medi {
+	margin-top: -1.45em;
+  }
+	
+  /* add medication page */
+  #add_medication {
+	  margin-top: -.5em;
+  }
+	
+  #add_medi_details {
+	overflow: scroll;
+  }
+	
+  #games_index {
+	height: 13em;
+  }
+}
+/* end phone landscape */
+/* ------------------------------------------- */
+/* mobile i-pad portrait */
+@media only screen and (min-width: 676px) and (max-width: 955px) {
+	
+  .navbar {
+	width: 110%
+  }
+	
+  #profileButton,
+  #chatButton {
+    height: 20.5em;
+    width: 100%;
+    padding: 5.5em 0 0 0;
+    margin: 1em 0 0 -.5em;
+    border-radius: 100%; 
+  }
+
+  #alarmButton {
+    height: 20.5em;
+    width: 100%;
+    padding: 6em 2em;
+    margin: -2.5em -.5em 0 .5em;
+    border-radius: 100%;
+  }
+
+  #memoryButton,
+  #gamesButton {
+    height: 20.5em;
+    width: 100%;
+    padding: 2em 0 0 0;
+    margin: -1.5em 0 0 -1em;
+    border-radius: 100%;
+  }
+
+  #profileButton
+  #chatButton
+  #alarmButton
+  #gamesButton, h1, h2{
+    color: #000;
+    font-size: 4.5em;
+    padding: -.3em 0;
+  }
+
+  #memoryButton h2 {
+    font-size: 3.2em;
+  }
+
+  #elder_logo_left {
+    display: inline-block;
+    height: 11em;	
+    margin: 2.5em -1em 0 -.1em;
+  }
+
+  #elder_logo_right{
+    display: inline-block;
+    height: 11em;	
+    margin: 2.5em 0 0 1em;
+  }    
+
+  /* chat page */
+  .card-header {
+    height: 1.5em;
+  }
+
+  #contact_button, a {
+    font-size: 1em;
+  }
+
+  #text_button {
+    font-size: 1.5em;
+    padding: 0 2.5em;
+  }
+
+  #phone_button {
+    font-size: 1.5em;
+    padding: 0 2.5em;
+  }
+
+  #video_button {
+    font-size: 1.5em;
+    padding: 0 2.5em;
+  }  
+
+  #contactEditBtn {
+    margin-top: -.1em;
+  }
+
+  /* Chat Edit Page*/
+  #elder_logo_left_1 {
+    height: 5em;
+  }
+
+  #elder_logo_right_1{
+    height: 5em;
+  }
+
+  #edit_form {
+    margin-left: 5em;	
+  }
+
+  #edit_form label {
+    font-size: 2em;
+  }
+
+  #edit_form input {
+    margin-left: .5em;
+  }
+
+  /* chat add page*/
+
+  #add_page {
+    margin: 4em;	
+  }
+
+  /* profile index page*/
+  #profile_pic {
+	margin-left: 4em;
+    height: 10em;
+  }	
+
+  #profile_info_div {
+    font-size: 1.7em;
+	margin-left: -.1em;
+	font-size: 2em;
+  }	
+
+  #profilediv {
+    padding: .5em;
+  }
+	
+  #doctorbutton {
+	padding: .5em 2em;
+	border-radius: .5em;
+  }
+
+  #medicationdiv {
+	border-top: .1em solid grey;
+	border-left: none;
+    font-size: 1.7em;
+  }
+
+  /* edit profile page*/
+  #profile_name {
+    margin: 3em 0 0 0;
+  }
+
+  #profile_name_label {
+      margin: 1.5em 0 0 0;
+  }
+
+  #profile_number {
+    margin-top: 1.5em;  
+  } 
+
+  #profile_number_label {
+    margin-top: .5em;
+  } 
+
+  #profile_email {
+    margin-top: 1.5em;	
+  }
+
+  #games_index {
+    height: 50em;
+  }
+	
+}
+/* end i-pad portrait */
+/* ------------------------------------------- */
+/* mobile i-pad landscape */
+@media only screen and (min-width: 956px) {
+	
+  .navbar {
+	width: 100%
+  }
+	
+  #profileButton,
+  #chatButton {
+	height: 15.9em;
+	width: 105%;
+	padding: 2.5em 0 0 0;
+	margin: .1em 0 0 -.5em;
+	border-radius: 100%;
+  }
+  
+  #alarmButton {
+	height: 15.9em;
+	width: 105%;
+	padding: 5em 2em;
+	margin: -2.1em -.5em 0 -.7em;
+  }
+  
+  #memoryButton,
+  #gamesButton {
+	height: 15.9em;
+	width: 105%;
+	padding: 2em 0 0 0;
+	margin: -2em 0 0 -1em;
+	border-radius: 100%;
+  }
+	
+  #profile_body {
+	overflow: scroll;
+	height: 50em;
+  }
+	
+  #profileButton h2, h1 {
+	font-size: 4em;
+  }
+	
+  #chatButton h2, h1 {
+	font-size: 4em;
+  }
+	
+  #gamesButton h2, h1 {
+	font-size: 4em;
+  }
+	
+  #memoryButton h2{
+	color: #000;
+	font-size: 3em;
+  }
+	
+  #memoryButton  h1{
+	color: #000;
+	font-size: 4.5em;
+	padding-left: .5em;
+  }
+	
+  #elder_logo_left {
+	display: inline-block;
+	height: 11em;	
+	margin: .1em -.5em 0 -21em;
+  }
+	
+  #elder_logo_right {
+	display: inline-block;
+	height: 11em;	
+	margin: .1em 0 0 -.7em;
+  }
+  
+  #sidebar {
+	visibility: visible;
+	margin-top: -43.7em;
+	width: 33%;
+	padding: 1em;
+  }
+	
+  /* chat page */
+  .card-header {
+	height: 1.5em;
+  }
+	
+  #body-chat {
+	overflow: scroll;
+	height: 130%;
+  }
+	
+  #contact_button, a {
+	font-size: 1em;
+  }
+	
+  #text_button {
+	font-size: 1.5em;
+	padding: 0 4.2em;
+  }
+	
+  #phone_button {
+	font-size: 1.5em;
+	padding: 0 4.2em;
+  }
+	
+  #video_button {
+	font-size: 1.5em;
+	padding: 0 4.2em;
+  }
+	
+  #contactEditBtn {
+	margin-top: -.1em;
+  }
+	
+  /* Chat Edit Page*/
+  .chat_top_div {
+	margin: 0 0 0 5.5em;;
+  }
+	
+  #elder_logo_left_1 {
+	height: 5em;
+  }
+	
+  #elder_logo_right_1{
+	  height: 5em;
+  }
+	
+  #edit_form {
+	margin-left: 5em;	
+  }
+	
+  #edit_form label {
+	font-size: 2em;
+  }
+	
+  /* profile index page*/
+  #profile_info_div {
+	font-size: 1.4em;
+	margin: 0 2em 0 -2em;
+	padding: 0;
+  }	
+	
+  #medication-info th {
+	font-size: 1.3em;
+  }
+	
+  #profile_pic {
+	height: 9em;
+	margin: 2em 0 0 -1.5em;
+	padding-bottom: .5em;
+  }
+	
+  #profilediv {
+	border: none;
+	margin: .5em 0;
+	padding: 1em;
+  }
+	
+  #medicationdiv {
+	font-size: 1.5em;
+	border-top: none;
+	border-left: .1em solid grey;
+  }
+	
+  /* edit profile page*/
+  #profile_name {
+	 margin: 3em 0 0 0;
+  }
+	
+  #profile_name_label {
+	 margin: 1.5em 0 0 0;
+  }
+	
+  #profile_number {
+    margin-top: .5em;  
+  } 
+	
+  #profile_number_label {
+    margin-top: 0;  
+  } 
+	
+  #profile_email {
+	margin-top: .5em;	
+  }
+	
+  #profile_email_label {
+	margin-top: 0;	
+  }
+	
+  .btn-block{
+    width: 79%;
+	height: 3.5em;
+  }
+	
+  /* edit medication table page*/
+  #mediTimeOption {
+	width: 75%;
+  }
+	
+  #medicInput {
+	margin-left: -1em;
+  }
+	
+  #games_index {
+	height: 35em;
+  }
+	
+}
+/* end i-pad landscape */
+/* ----------------------------- */
+/* laptop  */
+@media only screen and (min-width: 1176px) {
+  .navbar {
+	font-weight: bolder;
+  }
+  
+  #alarmButton {
+	margin: -2em 0 0 .5em;
+	  padding: 5em 2.5em;
+  }
+	
+  #elder_logo_left {	
+	margin: .1em -1.5em 0 -25.4em;
+  }
+	
+  #elder_logo_right{
+	margin: .5em 0 0 .3em;
+  }
+}
+
+/* ------------------------------------------- */
+/* large screen */
+@media only screen and (min-width: 1301px) {
+  
+  #alarmButton {
+	padding: 15% 15%;
+	margin: -.3em -.5em 0 2em;	
+  }
+  
+  #memoryButton{
+	margin: -.5em 0 0 -1em;
+  }
+	
+  #gamesButton {
+	margin: -.3em 0 0 -1em;	
+  }
+	
+  #elder_logo_left {	
+	margin: 2em -.5em 0 -30.4em;
+  }
+	
+  #elder_logo_right{
+	margin: 3em 0 0 2em;
+  }
+	
+  #sidebar {
+	margin-top: -47.2em;
+  }
+}
+
